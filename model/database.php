@@ -3,7 +3,7 @@ class database {
     private $sql, $db, $sth;
 
     function database(){
-        $this->db = new PDO('mysql:host=localhost;dbname=ban_sach_online_db', 'root', '');
+        $this->db = new PDO('mysql:host=localhost;dbname=bt1_database', 'root', '');
         $this->db->query("set names utf8");
     }
 
