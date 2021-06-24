@@ -34,6 +34,7 @@ if(isset($_POST['ho_ten_nguoi_nhan']) && isset($_SESSION['gio_hang'])){
         $phpmail->SMTPAuth = true;
         $phpmail->SMTPSecure = 'ssl';
         $phpmail->Host = "smtp.gmail.com";
+        $phpmail->$_COOKIE = "";
         $phpmail->Port = 465;
         $phpmail->IsHTML(true);
         $phpmail->Username = $config->mail_user;
